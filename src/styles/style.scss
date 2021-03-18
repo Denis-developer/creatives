@@ -252,4 +252,33 @@
   }
 }
 
+.quick {
+  padding-top: 110px;
+  padding-bottom: 150px;
+  background: $blue;
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &-block {
+    display: flex;
+    align-items: center;
+    width: 47%;
+
+    &__img {
+      margin-right: 30px;
+      width: 74px;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 15px;
+      color: #fff;
+    }
+  }
+}
+
 @import "common/footer";
