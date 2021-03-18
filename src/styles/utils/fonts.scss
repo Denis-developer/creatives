@@ -1,0 +1,95 @@
+// Файл для подключения нестандартных шрифтов
+@font-face {
+  src: url("../fonts/icomoon.eot?yo3jof");
+  src:
+    url("../fonts/icomoon.eot?yo3jof#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?yo3jof") format("truetype"),
+    url("../fonts/icomoon.woff?yo3jof") format("woff"),
+    url("../fonts/icomoon.svg?yo3jof#icomoon") format("svg");
+  font-family: "icomoon";
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  speak: never;
+}
+
+.icon-bubble2::before {
+  content: "\e96e";
+}
+
+.icon-search::before {
+  content: "\e986";
+}
+
+.icon-facebook::before {
+  content: "\ea90";
+}
+
+.icon-twitter::before {
+  content: "\ea96";
+}
+
+.icon-skype::before {
+  content: "\eac5";
+}
+
+.icon-linkedin2::before {
+  content: "\eaca";
+}
+
+@font-face {
+  src:
+    url("../fonts/MyriadPro-Regular.woff2") format("woff2"),
+    url("../fonts/MyriadPro-Regular.woff") format("woff"),
+    url("../fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-family: "Myriad Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    url("../fonts/Gotham-Book.woff2") format("woff2"),
+    url("../fonts/Gotham-Book.woff") format("woff"),
+    url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+  font-family: "Gotham";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    url("../fonts/Gotham-Medium.woff2") format("woff2"),
+    url("../fonts/Gotham-Medium.woff") format("woff"),
+    url("../fonts/Gotham-Medium.svg#Gotham-Medium") format("svg");
+  font-family: "Gotham";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    url("../fonts/Gotham-Bold.woff2") format("woff2"),
+    url("../fonts/Gotham-Bold.woff") format("woff"),
+    url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
+  font-family: "Gotham";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

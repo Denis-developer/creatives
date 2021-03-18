@@ -1,0 +1,39 @@
+extends common/layout
+
+block content
+  main.main
+    include common/header.pug
+    .container
+      .main__row
+        h1.main__title Creatives
+        h3.main__subtitle Power by PSDfreebies.com
+        .main-down
+          p.main-down__text Scroll Down
+          a.main-down__link(href="#about")
+            img(src="img/main/arrow.png")
+  section#about.about
+    .container
+      h2.title.about__title We are an awesome agency
+      .about__row
+        .about-block
+          .about-block__icon
+            img(src="img/write-icon.png")
+          h6.about-block__title Feature one
+          p.about-block__text Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.
+        .about-block
+          .about-block__icon
+            img(src="img/write-icon.png")
+          h6.about-block__title Feature two
+          p.about-block__text Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.
+        .about-block
+          .about-block__icon
+            span.icon-search
+          h6.about-block__title Feature three
+          p.about-block__text Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.
+        .about-block
+          .about-block__icon
+            span.icon-bubble2
+          h6.about-block__title Feature four
+          p.about-block__text Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Donec id elit non mi porta gravida at eget metus.
+  .news
+    .container

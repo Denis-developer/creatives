@@ -1,0 +1,124 @@
+@import "utils/fonts";
+@import "common/global";
+@import "common/header";
+
+.main {
+  height: 100vh;
+  text-align: center;
+  background: url("../img/main/bg.jpg") no-repeat center / cover;
+
+  &__row {
+    padding-top: 20vh;
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 152px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    color: #11749e;
+  }
+
+  &-down {
+    margin-top: 100px;
+
+    &__text {
+      margin-bottom: 15px;
+      font-size: 13px;
+      color: #fff;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      width: 66px;
+      height: 66px;
+      text-decoration: none;
+    }
+  }
+}
+
+.about {
+  padding-top: 170px;
+  padding-bottom: 130px;
+  background: $blue;
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 140px;
+
+    &::before {
+      content: "w";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: 0;
+      font-size: 200px;
+      text-transform: uppercase;
+      color: #fff;
+      opacity: 0.2;
+      transform: translateX(-50%);
+    }
+  }
+
+  &-block {
+    max-width: 23%;
+    text-align: center;
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      background-color: rgba(255, 255, 255, 0.1);
+
+      img {
+        width: 36px;
+      }
+
+      span {
+        font-size: 28px;
+        color: #fff;
+      }
+    }
+
+    &__title {
+      margin-top: 18px;
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 15px;
+      color: #fff;
+    }
+  }
+}
+
+@import "common/footer";

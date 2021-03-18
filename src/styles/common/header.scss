@@ -1,0 +1,64 @@
+@import "../mixins/media";
+
+.header {
+  border-bottom: 1px solid #757575;
+  height: 115px;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    height: 115px;
+  }
+
+  &-nav {
+    display: flex;
+    margin-left: auto;
+    height: 100%;
+
+    &__link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+      padding: 0 13px;
+      height: 100%;
+      font-family: "Myriad Pro";
+      font-weight: 400;
+      font-size: 20px;
+      color: #fff;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: $blue;
+        transform: scale(0);
+        transition: all 0.3s;
+      }
+
+      &_active {
+        &::before {
+          transform: scale(1);
+        }
+      }
+
+      &:hover {
+        &::before {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  &-soc {
+    &__link {
+      margin-left: 25px;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+}
