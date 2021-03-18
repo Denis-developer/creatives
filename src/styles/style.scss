@@ -104,12 +104,6 @@
       font-size: 18px;
       color: #fff;
     }
-
-    &__text {
-      font-weight: 400;
-      font-size: 15px;
-      color: #fff;
-    }
   }
 }
 
@@ -166,8 +160,6 @@
 
   &__text {
     margin-bottom: 30px;
-    font-weight: 400;
-    font-size: 15px;
   }
 
   &__block {
@@ -188,6 +180,10 @@
 
       .news__content {
         transform: translate(-50%, 0);
+      }
+
+      .news__text {
+        color: $black;
       }
 
       .news__body {
@@ -245,8 +241,6 @@
     }
 
     &__text {
-      font-weight: 400;
-      font-size: 15px;
       color: $black;
     }
   }
@@ -272,11 +266,59 @@
       margin-right: 30px;
       width: 74px;
     }
+  }
+}
 
-    &__text {
-      font-weight: 400;
+.features {
+  padding: 100px 0;
+  background: url("../img/features/bg.jpg") no-repeat center / cover;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 470px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__text {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      padding: 0 20px;
+      width: 90%;
+      height: 40px;
+      font-weight: 500;
       font-size: 15px;
+      text-transform: uppercase;
       color: #fff;
+      background: $blue;
+
+      &:nth-child(1) {
+        width: 75%;
+      }
+
+      &:nth-child(2) {
+        width: 83%;
+      }
     }
   }
 }
