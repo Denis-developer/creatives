@@ -3,13 +3,18 @@
 @import "common/header";
 
 .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   text-align: center;
   background: url("../img/main/bg.jpg") no-repeat center / cover;
 
-  &__row {
-    padding-top: 20vh;
-    padding-bottom: 100px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 
   &__title {
@@ -21,6 +26,7 @@
   }
 
   &__subtitle {
+    margin-top: 20px;
     font-weight: 500;
     font-size: 24px;
     letter-spacing: 20px;
@@ -29,7 +35,8 @@
   }
 
   &-down {
-    margin-top: 100px;
+    position: relative;
+    top: 15vh;
 
     &__text {
       margin-bottom: 15px;
@@ -117,6 +124,96 @@
       font-weight: 400;
       font-size: 15px;
       color: #fff;
+    }
+  }
+}
+
+.news {
+  overflow: hidden;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 1220px;
+  }
+
+  &__content {
+    flex: 0 0 100%;
+  }
+
+  &__img {
+    position: relative;
+    flex: 0 0 50%;
+    transform: translate(-100%, 0);
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    padding: 80px 0;
+    width: 50%;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 13px;
+
+    span {
+      display: inline-block;
+      margin: 0 12px;
+    }
+  }
+
+  &__title {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  &__block {
+    &_1 {
+      display: flex;
+      color: #fff;
+      background: #222;
+
+      .news__body {
+        padding-right: 85px;
+      }
+    }
+
+    &_2 {
+      display: flex;
+      color: #222;
+      background: #f3f3f3;
+
+      .news__content {
+        transform: translate(-50%, 0);
+      }
+
+      .news__body {
+        margin-left: auto;
+        padding-left: 85px;
+        width: 50%;
+      }
+
+      .news__img {
+        transform: translate(0, 0);
+      }
     }
   }
 }
