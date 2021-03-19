@@ -130,3 +130,12 @@ block content
           .team-block__content
             h6.team-block__name LADY SANSA
             p.team-block__prof Photographer
+  section.contact
+    .container
+      h2.title.contact__title(data-letter="c") We’d love to hear about your project.
+      form.contact-form(action="#")
+        input.contact-form__input(type="text" placeholder="Name" required)
+        input.contact-form__input(type="email" placeholder="Email" required)
+        input.contact-form__input(type="tel" placeholder="Phone" required)
+        textarea.contact-form__textarea(placeholder="Message")
+        input.contact-form__btn(type="submit" value="Submit")
