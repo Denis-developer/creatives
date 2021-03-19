@@ -323,4 +323,61 @@
   }
 }
 
+.team {
+  padding: 130px 0;
+
+  &__title {
+    color: $black;
+
+    &::before {
+      color: #d7d7d7;
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    margin-top: 140px;
+    margin-bottom: 70px;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: $black;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-block {
+    position: relative;
+    width: 270px;
+
+    &__content {
+      position: absolute;
+      left: 50%;
+      bottom: -42px;
+      padding: 25px 10px;
+      width: 80%;
+      text-align: center;
+      background: #fff;
+      transform: translateX(-50%);
+    }
+
+    &__name {
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $blue;
+    }
+
+    &__text {
+      font-weight: 500;
+      font-size: 15px;
+      color: #000;
+    }
+  }
+}
+
 @import "common/footer";
