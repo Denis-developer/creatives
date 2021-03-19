@@ -435,4 +435,12 @@
   }
 }
 
+.map {
+  background-color: $black;
+
+  &__img {
+    width: 100%;
+  }
+}
+
 @import "common/footer";
